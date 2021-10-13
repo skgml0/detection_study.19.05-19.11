@@ -8,7 +8,7 @@ import datetime
 #from camera import Camera
 
 from flask import render_template
-db=pymysql.connect(host="58.127.154.133",port=3333,user="tutucoin",password="ubuntu123",db="STUDYISCOIN",charset="utf8")
+db=pymysql.connect(host="",port=,user="",password="",db="",charset="utf8")
 cursor=db.cursor()
 
 # initialize a flask object
