@@ -1,0 +1,67 @@
+
+  {% extends 'login.html' %}
+  {% block content %}
+<title>APP+ PAGE</title>
+
+    <div class="container">
+      <div class="tm-search-form-container">
+        <form action="index.html" method="GET" class="form-inline tm-search-form">
+          <div class="text-uppercase tm-new-release">Goal Time</div>
+          <div class="form-group tm-search-box">
+            <input type="text" name="keyword" class="form-control tm-search-input" placeholder="목표시간을 넣어주세요.">
+            <input type="submit" value="등록" class="form-control tm-search-submit">
+          </div>
+          <div class="form-group tm-advanced-box">
+            <a href="#" class="tm-text-white">Go Advanced ...</a>
+          </div>
+        </form>
+      </div>
+
+      <div class="row tm-albums-container grid">
+        <div class="col-sm-6 col-12 col-md-6 col-lg-3 col-xl-3 tm-album-col">
+          <figure class="effect-sadie">
+            <img src="{{ url_for('static', filename='img/insertion-260x390-01.jpg')}}" alt="Image" class="img-fluid">
+            <figcaption>
+              <h2>D-Day</h2>
+              <p>당신의 목표를 관리하세요.</p>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="col-sm-6 col-12 col-md-6 col-lg-3 col-xl-3 tm-album-col">
+          <figure class="effect-sadie">
+            <img src="{{ url_for('static', filename='img/insertion-260x390-02.jpg')}}" alt="Image" class="img-fluid">
+            <figcaption>
+              <h2>To Do List</h2>
+              <p>해야할 일들을 관리</p>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="col-sm-6 col-12 col-md-6 col-lg-3 col-xl-3 tm-album-col">
+          <figure class="effect-sadie">
+            <img src="{{ url_for('static', filename='img/insertion-260x390-03.jpg')}}" alt="Image" class="img-fluid">
+            <figcaption>
+              <h2>Cumulative Time</h2>
+              <p>공부한 시간을 확인</p>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="col-sm-6 col-12 col-md-6 col-lg-3 col-xl-3 tm-album-col">
+          <figure class="effect-sadie">
+            <img src="{{ url_for('static', filename='img/insertion-260x390-04.jpg')}}" alt="Image" class="img-fluid">
+            <figcaption>
+              <h2>Notice</h2>
+              <p>공지사항을 확인</p>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="tm-tag-line">
+          <h2 class="tm-tag-line-title">운명은 우연이 아닌, 선택이다. 기다리는 것이 아니라, 성취하는 것이다.</h2>
+          </div>
+        </div>
+      </div>
+
+      {% endblock %}

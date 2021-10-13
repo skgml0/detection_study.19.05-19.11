@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+   <!-- load CSS -->
+  <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/bootstrap.min.css')}}">                                            <!-- https://getbootstrap.com/ -->
+  <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/fontawesome-all.min.css')}}">                                      <!-- Font awesome -->
+  <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/tooplate-style.css')}}">       
+  <title>LOGIN PAGE</title>
+  <script>
+    var renderPage = true;
+
+    if (navigator.userAgent.indexOf('MSIE') !== -1
+      || navigator.appVersion.indexOf('Trident/') > 0) {
+      /* Microsoft Internet Explorer detected in. */
+      alert("Please view this in a modern browser such as Chrome or Microsoft Edge.");
+      renderPage = false;
+    }
+  </script>
+   <style>
+  #box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+</style>
+  </head>
+  
+  <body>
+
+  <!-- Loader -->
+  <div id="loader-wrapper">
+    <div id="loader"></div>
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+  </div>
+
+  <div class="tm-main">
+    <div class="tm-welcome-section">
+      <div class="container tm-navbar-container">
+        <div class="row">
+          <div class="col-xl-12">
+            <nav class="navbar navbar-expand-sm">
+              <ul class="navbar-nav ml-auto">
+                
+                <li class="nav-item active">
+                  <a href="/" class="nav-link tm-nav-link tm-text-white active">Login</a>
+                </li>
+                <li class="nav-item">
+                  <a href="/room" class="nav-link tm-nav-link tm-text-white">room</a>
+                </li>
+                <li class="nav-item">
+                  <a href="/app" class="nav-link tm-nav-link tm-text-white">app</a>
+                </li>   
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="container text-center tm-welcome-container">
+        <div class="tm-welcome">
+          <i class="fas tm-fa-big fa-music tm-fa-mb-big"></i>
+          <h1 class="text-uppercase mb-3 tm-site-name">Studyroom</h1>
+          <p class="tm-site-description">Your future will be beautiful.</p>
+        </div>
+      </div>
+    
+    </div>
+    </div>
+
+    <div id="box">
+
+      <div class="login_wrap">
+      <form action="/login" id="" method="POST" action="http://58.127.154.133:80/webLogin.php">
+        <fieldset>
+          <label for="userID">아이디</label>
+          <input type="text" id="userID" name="userID" placeholder="ID" >
+          <label for="userPassword">비밀번호</label>
+          <input type="password" id="userPassword" name="userPassword"  >
+          <button type="submit"  >로그인
+        </fieldset>
+        
+        </form> 
+      </div>
+    </div>
+    
+   
+
+
+    
+
+      <!-- Bottom links -->
+  
+      <footer class="row">
+        <div class="col-xl-12">
+          <p class="text-center p-4">Copyright &copy; <span class="tm-current-year">2020</span> CNS_GI
+          
+          - Design:  LA_LA</p>
+        </div>
+      </footer>
+    </div> <!-- .container -->
+
+  </div> <!-- .main -->
+   <!-- load JS -->
+   <script src="{{ url_for('static',filename='js/jquery-3.2.1.slim.min.js') }}"></script> <!-- https://jquery.com/ -->
+   <script src="{{ url_for('static',filename='js/bootstrap.min.js') }}"></script>         <!-- https://getbootstrap.com/ -->
+   <script>
+    /* DOM is ready
+    ------------------------------------------------*/
+    $(function () {
+
+      if (renderPage) {
+        $('body').addClass('loaded');
+      }
+
+      $('.tm-current-year').text(new Date().getFullYear());  // Update year in copyright
+    });
+
+  </script>
+</body>
+</html>
