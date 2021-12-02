@@ -1,6 +1,19 @@
 # face_detection_study
 # 1. 시스템 구축 배경
 Study is Coin은 학습자에게 포인트를 줌으로써 지속적인 동기부여를 주는 것이 가능하며, 자기 주도적 학습 관리를 해주는 모바일 애플리케이션을 통해 자신의 목표 관리를 더 쉽고 효율적으로 이용할 수 있다. 또한, 얼굴 인식 시스템과 웹 버튼의 이용 시간을 비교하여 자신의 집중도를 인지할 수 있게 하는 것을 목표로 한다. 학습 관리가 필요한 모든 사용자들은 이 시스템을 이용하면, 자신의 시간을 관리하고 체계적으로 활용하여 좋은 학습결과를 가져올 수 있을 것이다.
+- 개발 환경
+ ![image](https://user-images.githubusercontent.com/52391780/144340615-920b059a-4c24-4ffb-bd87-b6e873d76385.png)
+
+- 요구사항 정의서
+![image](https://user-images.githubusercontent.com/52391780/144340063-df8290f6-397f-4325-b9b7-43ea6f85252e.png)
+
+- 서비스 시나리오
+![image](https://user-images.githubusercontent.com/52391780/144340124-9752b836-cecc-4b41-a8c3-f1df00689e77.png)
+
+- 기능 처리도
+![image](https://user-images.githubusercontent.com/52391780/144340209-5df5badc-c403-40e3-bec1-c7fe2d5e25a5.png)
+
+
 # 2. 프로젝트 시나리오
 ![image](https://user-images.githubusercontent.com/52391780/144335451-c7cdc3d6-8cf4-4fd6-ad32-6358c60d8bbb.png)
 
@@ -44,3 +57,16 @@ https://user-images.githubusercontent.com/52391780/144339395-d1a8c6fc-a4c5-49f6-
 처음으로 주제를 정하고, 외부 개발 공모전에 참여하면서 개발에 대한 많은 것을 얻어갈 수 있었다. 
 짧은 시간동안 언어를 배우고, 웹의 프론트엔드와 Nginx 백엔드, 얼굴 인식에 대해 공부하며 급속한 성장을 할 수 있었다. 
 결과적으로 공모전에서 한이음 입선으로 수상과 졸업 논문을 발표하는 소중한 결과물을 얻을 수 있었다. 
+
+# 6. 핵심코드소스
+![image](https://user-images.githubusercontent.com/52391780/144340334-2ff5b1dc-a66a-4ff3-b284-bc52b37085d2.png)
+
+![image](https://user-images.githubusercontent.com/52391780/144340388-5eed8e76-a8f0-453a-b165-a327db2cda9d.png)
+
+![image](https://user-images.githubusercontent.com/52391780/144340444-962f3972-b4f1-4542-b2e9-d8fd9a75b3a5.png)
+
+![image](https://user-images.githubusercontent.com/52391780/144340505-f67b036c-c417-40ec-9c5d-99f8430a7c60.png)
+
+![image](https://user-images.githubusercontent.com/52391780/144340542-5c49984a-3649-40e9-bbd0-5fd6a6a38cfd.png)
+
+![image](https://user-images.githubusercontent.com/52391780/144340505-f67b036c-c417-40ec-9c5d-99f8430a7c60.png)
